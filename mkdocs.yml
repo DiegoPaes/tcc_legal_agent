@@ -1,0 +1,25 @@
+site_name: Agente Jurídico RAG (TCC)
+site_description: Documentação técnica do Agente de IA para Direito Brasileiro
+site_author: Diego Paes
+
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+    - navigation.sections
+    - content.code.copy
+
+plugins:
+    - search
+    - mermaid2
+    - mkdocstrings:
+        handlers:
+          python:
+            paths: [src]  # Onde está seu código fonte
+
+nav:
+  - Home: index.md
+  - Arquitetura:
+      - Pipeline de Ingestão: api/ingestion.md
+      - Motor RAG: api/rag.md
+      - Configuração: api/config.md

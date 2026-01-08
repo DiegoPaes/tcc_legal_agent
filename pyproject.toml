@@ -1,0 +1,28 @@
+[project]
+name = "tcc-legal-agent"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Diego Paes",email = "diego.paes92@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "mkdocs (>=1.6.1,<2.0.0)",
+    "mkdocs-mermaid2-plugin (>=1.2.3,<2.0.0)",
+    "pytest (>=9.0.2,<10.0.0)",
+    "pydantic (>=2.12.5,<3.0.0)",
+    "pydantic-settings (>=2.12.0,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "tcc_legal_agent", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "mkdocstrings[python] (>=1.0.0,<2.0.0)"
+]
