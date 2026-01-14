@@ -4,22 +4,26 @@ site_author: Diego Paes
 
 theme:
   name: material
-  custom_dir: overrides
+  palette: 
+    scheme: default
+    primary: indigo
+    accent: blue
   features:
     - navigation.sections
     - content.code.copy
 
 plugins:
-    - search
-    - mermaid2
-    - mkdocstrings:
-        handlers:
-          python:
-            paths: [src]  # Onde está seu código fonte
+  - search
+  - mermaid2
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src] # Onde está seu código fonte
 
 nav:
   - Home: index.md
-  - Arquitetura:
-      - Pipeline de Ingestão: api/ingestion.md
+  - Arquitetura Técnica:
+      - Ingestão de Dados: api/ingestion.md
       - Motor RAG: api/rag.md
+      - Validação: api/validator.md
       - Configuração: api/config.md

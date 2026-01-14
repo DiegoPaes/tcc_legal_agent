@@ -1,17 +1,9 @@
-# Welcome to MkDocs
+# Bem-vindo ao Agente Jurídico RAG
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Projeto de TCC desenvolvido para otimizar a consulta ao Código de Defesa do Consumidor utilizando IA Generativa e Arquitetura RAG.
 
-## Commands
+## Como Executar
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+1. Instale as dependências:
+   ```bash
+   poetry install

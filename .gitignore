@@ -6,6 +6,12 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyc
+.env
+.venv/
+data/chroma_db/
+.pytest_cache/
+site/
 
 # C extensions
 *.so
